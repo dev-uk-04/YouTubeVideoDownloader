@@ -13,7 +13,7 @@ Bootstrap(app)
 
 # Main Form
 class DownloadForm(FlaskForm):
-    url_field = StringField("", validators=[DataRequired()], render_kw={"placeholder": "You Tube Video URL"})
+    url_field = StringField("", validators=[DataRequired()], render_kw={"placeholder": "YouTube Video URL"})
     download = SubmitField("Download")
 
 
