@@ -31,7 +31,7 @@ def home():
         stream = yt.streams.first()
         try:
             # downloading the video
-            stream.download()
+            stream.download('~/Downloads')
             flash("Download completed !")
             return render_template("index.html", form=form)
         except ConnectionError:
